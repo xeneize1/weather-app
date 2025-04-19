@@ -3,7 +3,7 @@ import './App.css'
 import { useEffect, useState } from "react";
 import { useGeolocation } from "./hooks/useGeolocation";
 
-const API_KEY = "6dca3f10dee20b9972073aa12cc3cf12"; // reemplazá con tu clave real
+const API_KEY = import.meta.env.VITE_API_KEY; // importa la clave de una variable de entorno
 
 export default function App() {
   const location = useGeolocation();
